@@ -38,9 +38,29 @@ fs.readFile("ErrorLog/error.txt","utf8",(err,data)=>{
 
  */
 // delete
+/*
 fs.unlink("ErrorLog/test.txt", (err) => {
     if (err) {
         throw err;
     }
     console.log('file deleted')
 })
+
+ */
+
+// copy
+/*
+fs.copyFile("ErrorLog/error.txt","ErrorLog/log.txt", (err) =>{
+    if (err) throw err;
+    console.log('file copied')
+})
+
+ */
+// delete
+/*
+fs.rmdir("log", (err) => {
+    if (err) throw err;
+    console.log('folder deleted')
+})
+
+ */
