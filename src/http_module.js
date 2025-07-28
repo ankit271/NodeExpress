@@ -1,6 +1,8 @@
 const http = require('http')
 
-const PORT = 5000
+const PORT = process.env.PORT;
+console.log('Loaded PORT:', PORT); // check if it's undefined here
+
 
 const app = http.createServer((req,res)=>{
     switch(req.url){
