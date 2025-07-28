@@ -1,6 +1,6 @@
 const http = require('http')
-
-const PORT = process.env.PORT;
+require('dotenv').config()
+const PORT = process.env.PORT || 8000;
 console.log('Loaded PORT:', PORT); // check if it's undefined here
 
 
